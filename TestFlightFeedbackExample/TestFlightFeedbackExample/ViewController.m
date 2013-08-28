@@ -28,7 +28,7 @@
 
 - (IBAction)openFeedback:(id)sender
 {
-    
+    [TestFlight openFeedbackView];
 }
 
 @end

@@ -14,7 +14,8 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pll-ma-KuA">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="bLN-vJ-5kN"/>
+                                    <constraint firstAttribute="height" constant="43" type="user" id="Afa-ji-usd"/>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="bLN-vJ-5kN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Open feedback">
@@ -31,8 +32,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pll-ma-KuA" firstAttribute="centerX" secondItem="RJq-ef-stX" secondAttribute="centerX" type="default" id="2tx-mz-CF3"/>
-                            <constraint firstItem="pll-ma-KuA" firstAttribute="top" secondItem="RJq-ef-stX" secondAttribute="top" constant="480" id="VXY-tc-7xM"/>
+                            <constraint firstAttribute="centerX" secondItem="pll-ma-KuA" secondAttribute="centerX" type="user" id="iKJ-c0-KGZ"/>
+                            <constraint firstAttribute="centerY" secondItem="pll-ma-KuA" secondAttribute="centerY" type="user" id="r3T-jP-8jE"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +41,17 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="openFeedback:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

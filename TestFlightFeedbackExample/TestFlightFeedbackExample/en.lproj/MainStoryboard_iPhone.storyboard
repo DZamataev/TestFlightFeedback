@@ -14,7 +14,8 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbj-rz-y0R">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="Xqh-gS-zFh"/>
+                                    <constraint firstAttribute="height" constant="43" type="user" id="bGL-7v-yc6"/>
+                                    <constraint firstAttribute="width" constant="280" type="user" id="wKh-Us-TZN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Open feedback">
@@ -31,8 +32,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Wbj-rz-y0R" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="IoZ-oG-Cib"/>
-                            <constraint firstItem="Wbj-rz-y0R" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="13" id="coZ-wU-xs9"/>
+                            <constraint firstAttribute="centerX" secondItem="Wbj-rz-y0R" secondAttribute="centerX" type="user" id="1OA-q6-HIB"/>
+                            <constraint firstAttribute="centerY" secondItem="Wbj-rz-y0R" secondAttribute="centerY" type="user" id="kjh-hG-d96"/>
                         </constraints>
                     </view>
                 </viewController>
