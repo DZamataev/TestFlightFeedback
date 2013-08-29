@@ -8,27 +8,27 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.ios.deployment_target = '6.0'
-  
-  s.dependency 'TestFlightSDK', '~> 2.0.0'
 
   s.source       = {
       :git => "https://github.com/DZamataev/TestFlightFeedback.git",
       :tag => s.version.to_s
     }
-  s.source_files = 'Core/Source/*.{h,m}'
-  s.preserve_paths = 'TestFlightFeedback.xcodeproj', 'Core/Resources'
+  
+  s.dependency 'TestFlightSDK', '~> 2.0.0'
 
-  s.post_install do |library_representation|
-    Dir.chdir File.join(library_representation.sandbox_dir, 'TestFlightFeedback') do
-      command = "xcodebuild -project TestFlightFeedback.xcodeproj -target 'Resource Bundle' CONFIGURATION_BUILD_DIR=../Resources"
-      command << " 2>&1 > /dev/null"
-      unless system(command)
-        raise ::Pod::Informative, "Failed to generate TestFlightFeedback resources bundle"
-      end
-    end
-    File.open(library_representation.copy_resources_script_path, 'a') do |file|
-      file.puts "install_resource 'Resources/TestFlightFeedback.bundle'"
-    end
+  s.default_subspec = 'Core'
+
+  s.subspec 'Core' do |c|
+    
+    c.source_files = 'Core/Source/*'
+    c.resources = 'Core/Resources/*'
+  end
+
+  s.subspec 'Demo' do |d|
+    d.source_files = 'Demo/Source/*'
+    d.resources = 'Demo/Resources/*'
+    d.preserve_paths = "TestFlightFeedback.xcodeproj", "Podfile"
+    d.dependency 'TestFlightFeedback/Core'
   end
 
 end
