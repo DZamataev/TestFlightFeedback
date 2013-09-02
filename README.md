@@ -3,6 +3,14 @@ TestFlightFeedback
 
 Dropdown replacement for the feedback view controller functionality which was cuted from TestFlight SDK since version 2.0
 
+Installation
+==================
+
+CocoaPods
+```
+pod 'TestFlightFeedback', '~> 1.0.0'
+```
+or import everything from folder named ``` Core ```
 
 How to use
 ==================
