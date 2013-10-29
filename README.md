@@ -32,10 +32,13 @@ no need to change any of your code
 
 Screenshots
 ==================
+![iPhone iOS 7 screenshot](http://imageshack.us/a/img855/4903/v38w.png) 
+![iPhone iOS 6 screenshot](http://imageshack.us/a/img11/8233/62e0.png) 
 
-![iPhone screenshot](http://imageshack.us/a/img855/4903/v38w.png) 
+![iPad iOS 7 screenshot](http://imageshack.us/a/img18/5349/lpi6.png)
+![iPad iOS 6 screenshot](http://imageshack.us/a/img708/4246/8ga8.png) 
 
-![iPad screenshot](http://imageshack.us/a/img18/5349/lpi6.png)
+ 
 
 
 ---------------
