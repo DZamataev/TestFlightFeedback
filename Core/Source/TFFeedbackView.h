@@ -10,8 +10,6 @@
 
 @interface TFFeedbackView : UIView
 {
-    NSString *_backgroundColorPattern;
 }
 
-@property (nonatomic, strong) NSString *backgroundColorPattern;
 @end

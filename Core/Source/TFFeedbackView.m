@@ -10,14 +10,6 @@
 
 @implementation TFFeedbackView
 
-- (void)setBackgroundColorPattern:(NSString*)patternImageName {
-    _backgroundColorPattern = patternImageName;
-    self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:_backgroundColorPattern]];
-}
-
-- (NSString*)backgroundColorPattern {
-    return _backgroundColorPattern;
-}
 
 #pragma mark -
 
