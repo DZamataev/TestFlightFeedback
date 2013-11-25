@@ -3,7 +3,7 @@ TestFlightFeedback
 
 Dropdown replacement for the feedback view controller functionality which was cuted from TestFlight SDK since version 2.0
 
-**Version 1.0.0 is for iOS 6, version 2.0.0 is for iOS 7.**
+**Version 1.0.0 is for iOS 6, version 2.0.* is for iOS 7.**
 
 Installation
 ==================
