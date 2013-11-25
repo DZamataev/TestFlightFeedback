@@ -23,7 +23,6 @@
 		9250611017CF7B0F00072E38 /* TFFeedbackController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9250610617CF7B0F00072E38 /* TFFeedbackController_iPhone.xib */; };
 		9250611117CF7B0F00072E38 /* TestFlight+OpenFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250610917CF7B0F00072E38 /* TestFlight+OpenFeedback.m */; };
 		9250611217CF7B0F00072E38 /* TFFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250610B17CF7B0F00072E38 /* TFFeedbackController.m */; };
-		9250611317CF7B0F00072E38 /* TFFeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250610D17CF7B0F00072E38 /* TFFeedbackView.m */; };
 		EE50489C46424817AB01CF14 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326C98D7A894F6683762939 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +36,6 @@
 		925060E817CF7ACB00072E38 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		925060E917CF7ACB00072E38 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		925060EB17CF7ACB00072E38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		925060ED17CF7ACB00072E38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		925060EF17CF7ACB00072E38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		925060F117CF7ACB00072E38 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		925060F217CF7ACB00072E38 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		925060F317CF7ACB00072E38 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,8 +49,8 @@
 		9250610917CF7B0F00072E38 /* TestFlight+OpenFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestFlight+OpenFeedback.m"; sourceTree = "<group>"; };
 		9250610A17CF7B0F00072E38 /* TFFeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFeedbackController.h; sourceTree = "<group>"; };
 		9250610B17CF7B0F00072E38 /* TFFeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFeedbackController.m; sourceTree = "<group>"; };
-		9250610C17CF7B0F00072E38 /* TFFeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFeedbackView.h; sourceTree = "<group>"; };
-		9250610D17CF7B0F00072E38 /* TFFeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFeedbackView.m; sourceTree = "<group>"; };
+		929C8CA4184340090053F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		929C8CA5184340090053F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		F326C98D7A894F6683762939 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,8 +160,6 @@
 				9250610917CF7B0F00072E38 /* TestFlight+OpenFeedback.m */,
 				9250610A17CF7B0F00072E38 /* TFFeedbackController.h */,
 				9250610B17CF7B0F00072E38 /* TFFeedbackController.m */,
-				9250610C17CF7B0F00072E38 /* TFFeedbackView.h */,
-				9250610D17CF7B0F00072E38 /* TFFeedbackView.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -206,6 +201,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9250609817CF787E00072E38;
 			productRefGroup = 925060A217CF787E00072E38 /* Products */;
@@ -278,7 +274,6 @@
 				9250610117CF7ACB00072E38 /* ViewController.m in Sources */,
 				9250611117CF7B0F00072E38 /* TestFlight+OpenFeedback.m in Sources */,
 				9250611217CF7B0F00072E38 /* TFFeedbackController.m in Sources */,
-				9250611317CF7B0F00072E38 /* TFFeedbackView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +291,7 @@
 		925060EC17CF7ACB00072E38 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				925060ED17CF7ACB00072E38 /* en */,
+				929C8CA4184340090053F6DA /* Base */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
@@ -304,7 +299,7 @@
 		925060EE17CF7ACB00072E38 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				925060EF17CF7ACB00072E38 /* en */,
+				929C8CA5184340090053F6DA /* Base */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -337,7 +332,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,7 +357,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

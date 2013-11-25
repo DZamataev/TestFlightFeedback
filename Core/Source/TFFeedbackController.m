@@ -33,8 +33,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _textViewBottomSpacingConstraintInitialValue = _textViewBottomSpacingConstraint.constant;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
     [_textView becomeFirstResponder];
-    _textViewBottomSpacingConstraintOriginalValue = _textViewBottomSpacingConstraint.constant;
     [self changeTextViewBottomSpacingConstraintToSupportInterfaceOrientation:[UIApplication sharedApplication].statusBarOrientation];
 }
 
@@ -44,12 +48,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleDefault;
+}
+
+#pragma mark - Actions
 
 - (IBAction)cancel:(id)sender
 {
     [self dismiss];
 }
-
 
 - (IBAction)submit:(id)sender
 {
@@ -63,19 +71,22 @@
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
-    [self changeTextViewBottomSpacingConstraintToSupportInterfaceOrientation:toInterfaceOrientation];
-}
-
 - (void)changeTextViewBottomSpacingConstraintToSupportInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     if (UIInterfaceOrientationIsLandscape(interfaceOrientation)) {
         _textViewBottomSpacingConstraint.constant = TFFeedback_INTERFACE_IDIOM_SPECIFIC_TEXT_FIELD_BOTTOM_SPACING_FOR_LANDSCAPE_ORIENTATION;
     }
     else {
-        _textViewBottomSpacingConstraint.constant = _textViewBottomSpacingConstraintOriginalValue;
+        _textViewBottomSpacingConstraint.constant = _textViewBottomSpacingConstraintInitialValue;
     }
     [self.view layoutIfNeeded];
 }
+
+#pragma mark - Interface orientation changes
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [self changeTextViewBottomSpacingConstraintToSupportInterfaceOrientation:toInterfaceOrientation];
+}
+
 @end

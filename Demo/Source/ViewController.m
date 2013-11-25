@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TestFlight+OpenFeedback.h"
 
 @interface ViewController ()
 

@@ -6,7 +6,6 @@
 //
 //
 
-#import <TestFlight.h>
 #import "TFFeedbackController.h"
 
 @interface TestFlight (OpenFeedback)
