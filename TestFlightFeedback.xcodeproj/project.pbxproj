@@ -23,6 +23,8 @@
 		9250611017CF7B0F00072E38 /* TFFeedbackController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9250610617CF7B0F00072E38 /* TFFeedbackController_iPhone.xib */; };
 		9250611117CF7B0F00072E38 /* TestFlight+OpenFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250610917CF7B0F00072E38 /* TestFlight+OpenFeedback.m */; };
 		9250611217CF7B0F00072E38 /* TFFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250610B17CF7B0F00072E38 /* TFFeedbackController.m */; };
+		92D673A8188E79D800D56A31 /* UIWindow+TFFShakeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D673A7188E79D800D56A31 /* UIWindow+TFFShakeNotification.m */; };
+		92D673AB188E7EC600D56A31 /* TFFeedbackOpener.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D673AA188E7EC600D56A31 /* TFFeedbackOpener.m */; };
 		EE50489C46424817AB01CF14 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326C98D7A894F6683762939 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,10 @@
 		9250610B17CF7B0F00072E38 /* TFFeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFeedbackController.m; sourceTree = "<group>"; };
 		929C8CA4184340090053F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		929C8CA5184340090053F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		92D673A6188E79D800D56A31 /* UIWindow+TFFShakeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TFFShakeNotification.h"; sourceTree = "<group>"; };
+		92D673A7188E79D800D56A31 /* UIWindow+TFFShakeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TFFShakeNotification.m"; sourceTree = "<group>"; };
+		92D673A9188E7EC600D56A31 /* TFFeedbackOpener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFeedbackOpener.h; sourceTree = "<group>"; };
+		92D673AA188E7EC600D56A31 /* TFFeedbackOpener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFeedbackOpener.m; sourceTree = "<group>"; };
 		F326C98D7A894F6683762939 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,8 +164,12 @@
 			children = (
 				9250610817CF7B0F00072E38 /* TestFlight+OpenFeedback.h */,
 				9250610917CF7B0F00072E38 /* TestFlight+OpenFeedback.m */,
+				92D673A6188E79D800D56A31 /* UIWindow+TFFShakeNotification.h */,
+				92D673A7188E79D800D56A31 /* UIWindow+TFFShakeNotification.m */,
 				9250610A17CF7B0F00072E38 /* TFFeedbackController.h */,
 				9250610B17CF7B0F00072E38 /* TFFeedbackController.m */,
+				92D673A9188E7EC600D56A31 /* TFFeedbackOpener.h */,
+				92D673AA188E7EC600D56A31 /* TFFeedbackOpener.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -271,6 +281,8 @@
 			files = (
 				925060FE17CF7ACB00072E38 /* AppDelegate.m in Sources */,
 				925060FF17CF7ACB00072E38 /* main.m in Sources */,
+				92D673AB188E7EC600D56A31 /* TFFeedbackOpener.m in Sources */,
+				92D673A8188E79D800D56A31 /* UIWindow+TFFShakeNotification.m in Sources */,
 				9250610117CF7ACB00072E38 /* ViewController.m in Sources */,
 				9250611117CF7B0F00072E38 /* TestFlight+OpenFeedback.m in Sources */,
 				9250611217CF7B0F00072E38 /* TFFeedbackController.m in Sources */,

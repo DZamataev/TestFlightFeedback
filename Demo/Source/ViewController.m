@@ -31,4 +31,17 @@
     [TestFlight openFeedbackView];
 }
 
+- (IBAction)switchOpensOnShake:(id)sender
+{
+    if ([sender isKindOfClass:[UISwitch class]]) {
+        BOOL isOn = ((UISwitch*)sender).on;
+        if (isOn) {
+            [TestFlight of_enableOpenFeedbackOnShake];
+        }
+        else {
+            [TestFlight of_disableOpenFeedbackOnShake];
+        }
+    }
+}
+
 @end

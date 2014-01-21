@@ -7,6 +7,7 @@
 //
 
 #import "TFFeedbackController.h"
+#import "TestFlight+OpenFeedback.h"
 
 
 
@@ -18,7 +19,7 @@
 
 + (NSString*)nibFileName
 {
-    return [NSString stringWithFormat:@"%@%@", @"TFFeedbackController", TFFeedback_INTERFACE_IDIOM_SPECIFIC_ENDING];
+    return [NSString stringWithFormat:@"%@%@", NSStringFromClass([TFFeedbackController class]), TFFeedback_INTERFACE_IDIOM_SPECIFIC_ENDING];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -34,6 +35,8 @@
 {
     [super viewDidLoad];
     _textViewBottomSpacingConstraintInitialValue = _textViewBottomSpacingConstraint.constant;
+    _versionLabel.text = [TestFlight of_ApplicationVersionBuild];
+    _textView.layer.borderColor = [UIColor lightGrayColor].CGColor;
 }
 
 - (void)viewWillAppear:(BOOL)animated

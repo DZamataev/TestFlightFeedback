@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TestFlight.h>
 #import "TestFlight+OpenFeedback.h"
 
+
 @interface ViewController : UIViewController
+{
+}
 
 - (IBAction)openFeedback:(id)sender;
-
+- (IBAction)switchOpensOnShake:(id)sender;
 @end
