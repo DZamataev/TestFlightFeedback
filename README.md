@@ -30,12 +30,33 @@ Just as before use
 
 no need to change any of your code
 
+Features
+=====================================
+
+Open Feedback modally
+
+``` [TestFlight openFeedbackView]; ``` can be called from anywhere in your code
+
+
+Open Feedback on shake device - every time user shakes device, feedback view opens
+
+can be turned on/off this way
+
+```
+	[TestFlight of_enableOpenFeedbackOnShake]; // on
+```
+
+```
+    [TestFlight of_disableOpenFeedbackOnShake]; // off
+```
+
+
 Screenshots
 ==================
-![iPhone iOS 7 screenshot](http://imageshack.us/a/img855/4903/v38w.png) 
+![iPhone iOS 7 screenshot](http://imagizer.imageshack.us/v2/640x480q90/809/y6mu.png) 
 ![iPhone iOS 6 screenshot](http://imageshack.us/a/img11/8233/62e0.png) 
 
-![iPad iOS 7 screenshot](http://imageshack.us/a/img18/5349/lpi6.png)
+![iPad iOS 7 screenshot](http://imagizer.imageshack.us/v2/640x480q90/836/r7ud.png)
 ![iPad iOS 6 screenshot](http://imageshack.us/a/img708/4246/8ga8.png) 
 
  
