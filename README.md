@@ -33,12 +33,12 @@ no need to change any of your code
 Features
 =====================================
 
-Open Feedback modally
+**Open Feedback modally**
 
 ``` [TestFlight openFeedbackView]; ``` can be called from anywhere in your code
 
 
-Open Feedback on shake device - every time user shakes device, feedback view opens
+**Open Feedback on shake device** - every time user shakes device, feedback view opens
 
 can be turned on/off this way
 
@@ -49,6 +49,8 @@ can be turned on/off this way
 ```
     [TestFlight of_disableOpenFeedbackOnShake]; // off
 ```
+
+**Display Application Version and Application Build** from General project settings in the title of the toolbar of the feedback view.
 
 
 Screenshots
