@@ -18,6 +18,7 @@
     IBOutlet UITextView *_textView;
     IBOutlet NSLayoutConstraint *_textViewBottomSpacingConstraint;
     IBOutlet UILabel *_versionLabel;
+    IBOutlet UILabel *_titleLabel;
     CGFloat _textViewBottomSpacingConstraintInitialValue;
 }
 + (NSString*)nibFileName;

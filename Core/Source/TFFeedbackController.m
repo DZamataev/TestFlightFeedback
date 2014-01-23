@@ -37,6 +37,7 @@
     _textViewBottomSpacingConstraintInitialValue = _textViewBottomSpacingConstraint.constant;
     _versionLabel.text = [TestFlight of_ApplicationVersionBuild];
     _textView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _titleLabel.text = NSLocalizedStringFromTable(@"title_label_text", @"TestFlightFeedbackLocalizable", nil);
 }
 
 - (void)viewWillAppear:(BOOL)animated

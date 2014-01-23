@@ -23,6 +23,7 @@
 		9250611017CF7B0F00072E38 /* TFFeedbackController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9250610617CF7B0F00072E38 /* TFFeedbackController_iPhone.xib */; };
 		9250611117CF7B0F00072E38 /* TestFlight+OpenFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250610917CF7B0F00072E38 /* TestFlight+OpenFeedback.m */; };
 		9250611217CF7B0F00072E38 /* TFFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250610B17CF7B0F00072E38 /* TFFeedbackController.m */; };
+		925BFA8518913D9400FDFC59 /* TestFlightFeedbackLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 925BFA8718913D9400FDFC59 /* TestFlightFeedbackLocalizable.strings */; };
 		92D673A8188E79D800D56A31 /* UIWindow+TFFShakeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D673A7188E79D800D56A31 /* UIWindow+TFFShakeNotification.m */; };
 		92D673AB188E7EC600D56A31 /* TFFeedbackOpener.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D673AA188E7EC600D56A31 /* TFFeedbackOpener.m */; };
 		EE50489C46424817AB01CF14 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326C98D7A894F6683762939 /* libPods.a */; };
@@ -51,6 +52,11 @@
 		9250610917CF7B0F00072E38 /* TestFlight+OpenFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestFlight+OpenFeedback.m"; sourceTree = "<group>"; };
 		9250610A17CF7B0F00072E38 /* TFFeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFeedbackController.h; sourceTree = "<group>"; };
 		9250610B17CF7B0F00072E38 /* TFFeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFeedbackController.m; sourceTree = "<group>"; };
+		925BFA8618913D9400FDFC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/TestFlightFeedbackLocalizable.strings; sourceTree = "<group>"; };
+		925BFA8818913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainStoryboard_iPad.strings; sourceTree = "<group>"; };
+		925BFA8918913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
+		925BFA8A18913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file; name = ru; path = ru.lproj/TestFlightFeedbackLocalizable.strings; sourceTree = "<group>"; };
+		925BFA8B18913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		929C8CA4184340090053F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		929C8CA5184340090053F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		92D673A6188E79D800D56A31 /* UIWindow+TFFShakeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TFFShakeNotification.h"; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 			children = (
 				9250610517CF7B0F00072E38 /* TFFeedbackController_iPad.xib */,
 				9250610617CF7B0F00072E38 /* TFFeedbackController_iPhone.xib */,
+				925BFA8718913D9400FDFC59 /* TestFlightFeedbackLocalizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -212,6 +219,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 9250609817CF787E00072E38;
 			productRefGroup = 925060A217CF787E00072E38 /* Products */;
@@ -228,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925BFA8518913D9400FDFC59 /* TestFlightFeedbackLocalizable.strings in Resources */,
 				925060F817CF7ACB00072E38 /* Default-568h@2x.png in Resources */,
 				925060F917CF7ACB00072E38 /* Default.png in Resources */,
 				925060FA17CF7ACB00072E38 /* Default@2x.png in Resources */,
@@ -296,6 +305,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				925060EB17CF7ACB00072E38 /* en */,
+				925BFA8B18913DF000FDFC59 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -304,6 +314,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				929C8CA4184340090053F6DA /* Base */,
+				925BFA8818913DF000FDFC59 /* ru */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
@@ -312,8 +323,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				929C8CA5184340090053F6DA /* Base */,
+				925BFA8918913DF000FDFC59 /* ru */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		925BFA8718913D9400FDFC59 /* TestFlightFeedbackLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				925BFA8618913D9400FDFC59 /* Base */,
+				925BFA8A18913DF000FDFC59 /* ru */,
+			);
+			name = TestFlightFeedbackLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

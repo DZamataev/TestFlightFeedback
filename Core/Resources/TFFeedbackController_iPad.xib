@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="_textView" destination="5" id="45"/>
                 <outlet property="_textViewBottomSpacingConstraint" destination="155" id="190"/>
+                <outlet property="_titleLabel" destination="H7M-Ie-Kjo" id="EdR-Q8-bh3"/>
                 <outlet property="_versionLabel" destination="3ol-Xd-elZ" id="x40-dI-XHB"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -77,7 +78,7 @@
                             </view>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="15"/>
-                        <barButtonItem title="Submit" style="done" id="16">
+                        <barButtonItem style="done" systemItem="done" id="16">
                             <connections>
                                 <action selector="submit:" destination="-1" id="47"/>
                             </connections>
