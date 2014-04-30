@@ -17,6 +17,13 @@
     
     UIViewController *rootViewController = window.rootViewController;
     
+    if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        rootViewController = ((UINavigationController*)rootViewController).topViewController;
+    }
+    if ([rootViewController isKindOfClass:[UISplitViewController class]]) {
+        rootViewController = ((UISplitViewController*)rootViewController).viewControllers.lastObject;
+    }
+    
     [rootViewController presentViewController:feedbackController animated:YES completion:nil];
 }
 
