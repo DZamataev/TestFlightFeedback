@@ -1,10 +1,10 @@
 PODS:
-  - TestFlightSDK (2.0)
+  - TestFlightSDK (3.0.0)
 
 DEPENDENCIES:
-  - TestFlightSDK (= 2.0.0)
+  - TestFlightSDK
 
 SPEC CHECKSUMS:
-  TestFlightSDK: 940906d4b2550cf397c6f2d2fcc4ebfdcd8ae858
+  TestFlightSDK: fe0567a897456b6f65b180541892ef0154986e01
 
-COCOAPODS: 0.27.1
+COCOAPODS: 0.32.1
