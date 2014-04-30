@@ -52,10 +52,10 @@
 		9250610917CF7B0F00072E38 /* TestFlight+OpenFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestFlight+OpenFeedback.m"; sourceTree = "<group>"; };
 		9250610A17CF7B0F00072E38 /* TFFeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFeedbackController.h; sourceTree = "<group>"; };
 		9250610B17CF7B0F00072E38 /* TFFeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFeedbackController.m; sourceTree = "<group>"; };
-		925BFA8618913D9400FDFC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/TestFlightFeedbackLocalizable.strings; sourceTree = "<group>"; };
+		925BFA8618913D9400FDFC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/TestFlightFeedbackLocalizable.strings; sourceTree = "<group>"; };
 		925BFA8818913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainStoryboard_iPad.strings; sourceTree = "<group>"; };
 		925BFA8918913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
-		925BFA8A18913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file; name = ru; path = ru.lproj/TestFlightFeedbackLocalizable.strings; sourceTree = "<group>"; };
+		925BFA8A18913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/TestFlightFeedbackLocalizable.strings; sourceTree = "<group>"; };
 		925BFA8B18913DF000FDFC59 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		929C8CA4184340090053F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		929C8CA5184340090053F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
