@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
     }
 
   s.default_subspec = 'Core'
+  s.requires_arc = true
 
   s.subspec 'Core' do |c|
     c.requires_arc = true
