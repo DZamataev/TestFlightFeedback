@@ -13,15 +13,13 @@
 + (void)openFeedbackView {
     TFFeedbackController *feedbackController = [[TFFeedbackController alloc] initWithNibName:[TFFeedbackController nibFileName]
                                                                                       bundle:nil];
+    
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     
     UIViewController *rootViewController = window.rootViewController;
     
-    if ([rootViewController isKindOfClass:[UINavigationController class]]) {
-        rootViewController = ((UINavigationController*)rootViewController).topViewController;
-    }
-    if ([rootViewController isKindOfClass:[UISplitViewController class]]) {
-        rootViewController = ((UISplitViewController*)rootViewController).viewControllers.lastObject;
+    while (rootViewController.presentedViewController) {
+        rootViewController = rootViewController.presentedViewController;
     }
     
     [rootViewController presentViewController:feedbackController animated:YES completion:nil];
