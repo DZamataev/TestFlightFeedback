@@ -18,8 +18,16 @@
     
     UIViewController *rootViewController = window.rootViewController;
     
-    while (rootViewController.presentedViewController) {
-        rootViewController = rootViewController.presentedViewController;
+    UIViewController *presentedViewController = rootViewController.presentedViewController;
+    
+    while (presentedViewController) {
+        if (![presentedViewController isKindOfClass:[TFFeedbackController class]]) {
+            rootViewController = presentedViewController;
+            presentedViewController = rootViewController.presentedViewController;
+        }
+        else {
+            break;
+        }
     }
     
     [rootViewController presentViewController:feedbackController animated:YES completion:nil];
