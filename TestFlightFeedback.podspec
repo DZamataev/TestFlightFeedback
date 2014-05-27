@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TestFlightFeedback"
-  s.version      = "2.1.1"
+  s.version      = "2.1.2"
   s.summary      = "Dropdown replacement for the feedback view controller functionality which was cuted from TestFlight SDK"
   s.homepage     = "https://github.com/DZamataev/TestFlightFeedback"
   s.license      = { :type => 'MIT', :file => 'LICENSE'}
